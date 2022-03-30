@@ -1,0 +1,21 @@
+Ans. 1 There might be a few reasons for this to happen-
+
+i) A user is requesting for the OTP a large number of times.
+--> To fix this A person can only request an OTP from his phone number in an incremental time fashion
+For example after the 1st OTP request, the second OTP request will be made after 5mins, the next request could be made in 10mins and so on so forth.
+
+
+ii) A new OTP is requested every time the user visits the website or opens the app.
+--> For this we can save the auth token in local storage / cookies, once the user has successfully logged in. As a result, the user will not have to request an OTP the next time he logs in.
+
+
+iii) There is a possibility of excessive forceful attempts to gain access to user accounts.
+--> Here we can track the domain or IP address of the machine/server to prevent brute force attack. We can also detect <script> tags to check for any script injections.
+
+
+iv) We don’t know when the amount is spent above the limit.
+--> In this case we can set a threshold for the balance amount and have a notification or message system send out an alert when the balance reaches or crosses the limit.
+
+
+
+Ans. 2 	We can save a list of keywords in the database and then block videos or other related content that contains the term in the title/description/any part of the video. For example, if we enter the keywords 'Spiderman' and 'Spoiler,' any content containing any or both of these terms will be excluded.
